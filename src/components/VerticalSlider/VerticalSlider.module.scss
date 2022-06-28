@@ -1,0 +1,70 @@
+@import '../../base.scss';
+
+.main{
+    background-color: $background-slider;
+    padding: 30px;
+    margin: 50px 0;
+    border-radius: 16px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+}
+
+.thumbnails {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+}
+
+.thumbnails img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.scrollbar {
+    width: 1px;
+    height: 720px;
+    background: $title;
+    display: block;
+    margin: 0 0 0 8px;
+}
+
+.thumb {
+    width: 1px;
+    position: absolute;
+    height: 0;
+    background: $background-color;
+}
+
+.slides {
+    margin: 0 16px;
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1rem;
+    width: calc(540px + 1rem);
+    padding: 0 0.25rem;
+    height: 720px;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+}
+
+.item {
+    scroll-snap-align: start;
+}
+
+.image {
+    width: 540px;
+    object-fit: contain;
+}
+
+.slides::-webkit-scrollbar {
+    display: none;
+}

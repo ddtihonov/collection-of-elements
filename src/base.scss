@@ -1,2 +1,19 @@
 
 $background-color: #131316;
+$text-shadow-title: #3333ff;
+$title:#F2F2F3;
+$background-slider: #ffffff0d;
+
+@mixin title {
+    font-family: 'Iceland';
+    text-transform: uppercase;
+    font-size: 76px;
+    line-height: 86px;
+    margin: 0;
+    margin-top: 50px;
+    text-align: center;
+    text-shadow: 
+    0 0 16px #2c19a6, 
+    0 0 8px #2c19a6, 
+    0 4px 32px #0f0454;
+}

@@ -18,6 +18,12 @@ export const Main: FC = () => {
                 <li className={styles.item}>
                     <Link className={styles.link} to={'/buttons'}>Buttons</Link>
                 </li>
+                <li className={styles.item}>
+                    <Link className={styles.link} to={'/sliders'}>Sliders</Link>
+                </li>
+                <li className={styles.item}>
+                    <Link className={styles.link} to={'/headings'}>Headings</Link>
+                </li>
             </ul>
         </section>
     )
