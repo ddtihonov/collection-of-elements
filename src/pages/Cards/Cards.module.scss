@@ -1,0 +1,81 @@
+@import '../../base.scss';
+
+.main{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    @include title
+}
+
+.list{
+    box-sizing: border-box;
+    background-image: url(../../image/Cards/image.jpg);
+    background-size: cover;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    list-style: none;
+}
+
+.card{
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    padding: 10px;
+    color: $title;
+    border: 1px solid $title;
+}
+
+.card_blur{
+    backdrop-filter: blur(10px);
+}
+
+.card_brightness{
+    backdrop-filter: brightness(60%);
+}
+
+.card_contrast{
+    backdrop-filter: contrast(40%);
+}
+
+.card_shadow{
+    backdrop-filter: drop-shadow(4px 4px 10px blue);
+}
+
+.card_grayscale{
+    backdrop-filter: grayscale(60%);
+}
+
+.card_rotate{
+    backdrop-filter: hue-rotate(120deg);
+}
+
+.card_invert{
+    backdrop-filter: invert(70%); 
+}
+
+.card_opacity{
+    backdrop-filter: opacity(20%);
+}
+
+.card_sepia{
+    backdrop-filter: sepia(90%);
+}
+
+.card_saturate{
+    backdrop-filter: saturate(40%);
+}
+
+.card_rotate_blur{
+    backdrop-filter:  hue-rotate(270deg) blur(5px);
+}

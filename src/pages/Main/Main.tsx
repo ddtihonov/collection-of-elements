@@ -24,6 +24,9 @@ export const Main: FC = () => {
                 <li className={styles.item}>
                     <Link className={styles.link} to={'/headings'}>Headings</Link>
                 </li>
+                <li className={styles.item}>
+                    <Link className={styles.link} to={'/cards'}>Cards</Link>
+                </li>
             </ul>
         </section>
     )

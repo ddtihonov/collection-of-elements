@@ -1,7 +1,7 @@
 import React, { FC} from 'react'
 import { Route, Routes} from 'react-router-dom'
 import app from './App.module.scss'
-import { Main, Preloaders, Buttons, Sliders, Headings } from '../../pages'
+import { Main, Preloaders, Buttons, Sliders, Headings, Cards } from '../../pages'
 
 export const App: FC = () =>{
 
@@ -22,8 +22,13 @@ export const App: FC = () =>{
                   } />
           <Route  path='/Headings'  element={
                       <Headings/>
-                  } />                                    
+                  } />
+          <Route  path='/cards'  element={
+                      <Cards/>
+                  } />        
+
           </Routes>
+          
     </div>
   )
 }
